@@ -17,11 +17,11 @@ import javax.sql.DataSource;
 /**
  *
  */
-@Configuration
+//@Configuration
 public class DruidConfig {
 
-    @Bean  //声明其为Bean实例
-    @Primary  //在同样的DataSource中，首先使用被标注的DataSource
+    //@Bean  //声明其为Bean实例
+    //@Primary  //在同样的DataSource中，首先使用被标注的DataSource
     public ServletRegistrationBean druidServlet() {// 主要实现web监控的配置处理
         ServletRegistrationBean servletRegistrationBean = new ServletRegistrationBean(
                 new StatViewServlet(), "/druid/*");//表示进行druid监控的配置处理操作
@@ -34,7 +34,7 @@ public class DruidConfig {
 
     }
 
-    @Bean
+    //@Bean
     public FilterRegistrationBean filterRegistrationBean(){
         FilterRegistrationBean filterRegistrationBean=new FilterRegistrationBean();
         filterRegistrationBean.setFilter(new WebStatFilter());
@@ -43,8 +43,8 @@ public class DruidConfig {
         return filterRegistrationBean;
     }
 
-    @Bean
-    @ConfigurationProperties(prefix = "spring")
+    //@Bean
+    //@ConfigurationProperties(prefix = "spring")
     public DataSource druidDataSource() {
         return new DruidDataSource();
     }

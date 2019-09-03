@@ -1,7 +1,11 @@
 package com.bjpowernode.springboot.mapper;
 
 import com.bjpowernode.springboot.model.User;
+import org.apache.ibatis.annotations.Mapper;
 
+import java.util.List;
+
+@Mapper
 public interface UserMapper {
     int deleteByPrimaryKey(Integer userId);
 
@@ -14,4 +18,6 @@ public interface UserMapper {
     int updateByPrimaryKeySelective(User record);
 
     int updateByPrimaryKey(User record);
+
+    List<User> selectAllUser();
 }
