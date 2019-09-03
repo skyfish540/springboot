@@ -55,14 +55,29 @@ public class UserController {
         if (deleteUserCount>0){
             return "redirect:/user/showList";
         }else {
-            model.addAttribute("msg", "添加用户失败");
+            model.addAttribute("msg", "删除用户失败");
             return "msgBack";
         }
     }
 
     @RequestMapping("/toUpdate")
     public String updateUser(Integer userId,Model model ){
+        User user=userService.queryUserByUserId(userId);
+        model.addAttribute("user", user);
 
         return "toUpdate";
+    }
+
+    @RequestMapping("/update")
+    public String update(User user,Model model){
+        System.out.println(user);
+        int alterUserCount=userService.alterUser(user);
+
+        if (alterUserCount>0){
+            return "redirect:/user/showList";
+        }else {
+            model.addAttribute("msg", "修改用户失败");
+            return "msgBack";
+        }
     }
 }

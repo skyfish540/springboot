@@ -31,4 +31,14 @@ public class UserServiceImpl implements UserService {
     public int deletUser(Integer userId) {
         return userMapper.deleteByPrimaryKey(userId);
     }
+
+    @Override
+    public User queryUserByUserId(Integer userId) {
+        return userMapper.selectByPrimaryKey(userId);
+    }
+
+    @Override
+    public int alterUser(User user) {
+        return userMapper.updateByPrimaryKeySelective(user);
+    }
 }

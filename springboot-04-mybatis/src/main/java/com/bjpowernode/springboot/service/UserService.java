@@ -19,4 +19,8 @@ public interface UserService {
     List<User> queryAllUser();
 
     int deletUser(Integer userId);
+
+    User queryUserByUserId(Integer userId);
+
+    int alterUser(User user);
 }

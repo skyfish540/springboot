@@ -12,28 +12,44 @@
 </head>
 <body>
 <center>
-    <form action="/user/toUpdate" method="post">
+    <h2>用户信息修改</h2>
+    <form action="${pageContext.request.contextPath}/user/update" method="post">
         <table border="2">
             <tr>
-                <td>用户名</td>
-                <td>登录名</td>
-                <td>登录密码</td>
-                <td>Emil</td>
-                <td>删除</td>
-                <td>修改</td>
+                <td>
+                    <input type="hidden" name="userId" value="${user.userId}">
+                </td>
             </tr>
-            <c:if test="${not empty user}">
-                <c:forEach items="${user}" var="user">
-                    <tr>
-                        <td>${user.uname}</td>
-                        <td>${user.loginName}</td>
-                        <td>${user.password}</td>
-                        <td>${user.email}</td>
+            <tr>
+                <td>用户名</td>
+                <td>
+                    <input type="text" name="uname" value="${user.uname}">
+                </td>
+            </tr>
+            <tr>
+                <td>登录名</td>
+                <td>
+                    <input type="text" name="loginName" value="${user.loginName}">
+                </td>
+            </tr>
+            <tr>
+                <td>登录密码</td>
+                <td>
+                    <input type="text" readonly name="password" value="${user.password}">
+                </td>
+            </tr>
+            <tr>
+                <td>Emil</td>
+                <td>
+                    <input type="text" name="email" value="${user.email}">
+                </td>
+            </tr>
 
-                        <td><input type="submit" value="更新"></td>
-                    </tr>
-                </c:forEach>
-            </c:if>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="更新">
+                </td>
+            </tr>
         </table>
     </form>
 </center>
