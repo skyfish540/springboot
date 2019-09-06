@@ -3,9 +3,17 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/springboot-01-first/springboot-01-first.iml" filepath="$PROJECT_DIR$/springboot-01-first/springboot-01-first.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-02-config/springboot-02-config.iml" filepath="$PROJECT_DIR$/springboot-02-config/springboot-02-config.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-01-first/springboot-02-config.iml" filepath="$PROJECT_DIR$/springboot-01-first/springboot-02-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-03-jsp/springboot-03-jsp.iml" filepath="$PROJECT_DIR$/springboot-03-jsp/springboot-03-jsp.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-01-first/springboot-03-jsp.iml" filepath="$PROJECT_DIR$/springboot-01-first/springboot-03-jsp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-04-mybatis/springboot-04-mybatis.iml" filepath="$PROJECT_DIR$/springboot-04-mybatis/springboot-04-mybatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-01-first/springboot-04-mybatis.iml" filepath="$PROJECT_DIR$/springboot-01-first/springboot-04-mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-05-springmvc/springboot-05-springmvc.iml" filepath="$PROJECT_DIR$/springboot-05-springmvc/springboot-05-springmvc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-06-redis/springboot-06-redis.iml" filepath="$PROJECT_DIR$/springboot-06-redis/springboot-06-redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-07-consumer/springboot-07-consumer.iml" filepath="$PROJECT_DIR$/springboot-07-consumer/springboot-07-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-07-dubbo-mybatis-redis-provider/springboot-07-dubbo-mybatis-redis-provider.iml" filepath="$PROJECT_DIR$/springboot-07-dubbo-mybatis-redis-provider/springboot-07-dubbo-mybatis-redis-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-07-interface/springboot-07-interface.iml" filepath="$PROJECT_DIR$/springboot-07-interface/springboot-07-interface.iml" />
     </modules>
   </component>
 </project>

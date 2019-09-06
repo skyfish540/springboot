@@ -7,6 +7,11 @@
         <option value="$PROJECT_DIR$/springboot-02-config/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-03-jsp/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-04-mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-05-springmvc/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-06-redis/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-07-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-07-dubbo-mybatis-redis-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-07-consumer/pom.xml" />
       </list>
     </option>
   </component>
